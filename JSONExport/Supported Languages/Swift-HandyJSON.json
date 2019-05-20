@@ -108,7 +108,7 @@
     "basicTypesWithSpecialFetchingNeeds": [
     ],
     "arrayType": "[<!ElementType!>]",
-    "modelDefinitionWithParent": "\n\nclass <!ModelName!> : <!ParentClass!>",
+    "modelDefinitionWithParent": "\n\nclass <!ModelName!>Model : <!ParentClass!>",
     "instanceVarDefinition": "\tvar <!VarName!> : <!VarType!>?\n",
     "supportsFirstLineStatement": "false",
     "modelEnd": "\n}",
