@@ -64,7 +64,7 @@
     {
         "forEachProperty": "\t\tmapper <<< self.<!VarName!> <-- \"<!JsonKeyName!>\"\n",
         "bodyEnd": "\t}\n",
-        "signature": "\tfunc mapping(mapper: HelpingMapper)",
+        "signature": "\tmutating func mapping(mapper: HelpingMapper)",
         "forEachCustomTypeProperty": "\t\tmapper <<< self.<!VarName!> <-- \"<!JsonKeyName!>\"\n",
         "forEachArrayOfCustomTypeProperty": "\t\tmapper <<< self.<!VarName!> <-- \"<!JsonKeyName!>\"\n",
         "returnStatement": "\t\t\n",
@@ -88,27 +88,18 @@
     ],
     "defaultParentWithUtilityMethods": "HandyJSON",
     "constructors": [
-    {
-        "fetchBasicTypeWithSpecialNeedsPropertyFromMap": "",
-        "bodyStart": "{",
-        "bodyEnd": "}\n",
-        "fetchBasicTypePropertyFromMap": "",
-        "signature": "\trequired init()",
-        "fetchArrayOfCustomTypePropertyFromMap": "",
-        "comment": "",
-        "fetchCustomTypePropertyFromMap": ""
-    }
+    
     ],
-    "modelDefinition": "\nclass <!ModelName!>",
+    "modelDefinition": "\nstruct <!ModelName!>",
     "genericType": "Any",
     "getter": "",
     "setter": "",
-    "displayLangName": "Swift - HandyJSON",
+    "displayLangName": "Swift - HandyJSON - Struct - Model",
     "fileExtension": "swift",
     "basicTypesWithSpecialFetchingNeeds": [
     ],
-    "arrayType": "[<!ElementType!>]",
-    "modelDefinitionWithParent": "\n\nclass <!ModelName!>Model : <!ParentClass!>",
+    "arrayType": "[<!ElementType!>Model]",
+    "modelDefinitionWithParent": "\n\nstruct <!ModelName!>Model : <!ParentClass!>",
     "instanceVarDefinition": "\tvar <!VarName!> : <!VarType!>?\n",
     "supportsFirstLineStatement": "false",
     "modelEnd": "\n}",
